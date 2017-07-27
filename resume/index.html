@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <title>Resume</title>
     <link href="./css/H5.css" rel="stylesheet">
+    <link href="./css/H5ComponentBase.css" rel="stylesheet">
+    <link href="./css/H5ComponentBar.css" rel="stylesheet">
+    <link href="./css/H5ComponentPoint.css" rel="stylesheet">
+    <link href="./css/H5ComponentPolyLine.css" rel="stylesheet">
+    <link href="./css/H5ComponentRadar.css" rel="stylesheet">
+    <link href="./css/H5ComponentPie.css" rel="stylesheet">
+    <link href="./css/H5ComponentRing.css" rel="stylesheet">
+
     <link href="./index.css" rel="stylesheet">
 
 </head>
@@ -14,18 +22,14 @@
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
 <script src="./js/H5.js" type="text/javascript"></script>
-<script>
-  var res = [
-    'Base', 'Bar', 'Point', 'Polyline', 'Radar', 'Pie','ring'
-  ];
-  var html = [];
-  for (s in res) {
-    html.push('<script src="./js/H5Component' + res[s] + '.js" type="text/javascript"><\/script>');
-    html.push('<link href="./css/H5Component' + res[s] + '.css" rel="stylesheet">')
-  }
-  document.write(html.join(' '));
+<script src="./js/H5ComponentBase.js" type="text/javascript"></script>
+<script src="./js/H5ComponentBar.js" type="text/javascript"></script>
+<script src="./js/H5ComponentPoint.js" type="text/javascript"></script>
+<script src="./js/H5ComponentPolyLine.js" type="text/javascript"></script>
+<script src="./js/H5ComponentRadar.js" type="text/javascript"></script>
+<script src="./js/H5ComponentPie.js" type="text/javascript"></script>
+<script src="./js/H5ComponentRing.js" type="text/javascript"></script>
 
-</script>
 <script>
   $(function () {
     var h5 = new H5();
