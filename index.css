@@ -5,11 +5,11 @@ body {
 }
 
 .h5_page{
-    background-image: url("imgs/page_bg.png");
+    background-image: url("imgs/page_bg.jpg");
     background-size: cover;
 }
 .h5_page_face {
-    background-image: url("imgs/face_bg.png");
+    background-image: url("imgs/face_bg.jpg");
     background-size: cover;
 }
 
