@@ -1,6 +1,7 @@
 /* 环图组件对象 */
+import H5ComponentPie from './H5ComponentPie'
 
-var H5ComponentRing =function ( name, cfg ) {
+export default function H5ComponentRing( name, cfg ) {
 
 
   if(cfg.data.length>1){  //  环图应该只有一个数据

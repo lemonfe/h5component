@@ -1,6 +1,6 @@
 /* 基本图文组件对象 */
-
-var H5ComponentBar =function ( name, cfg ) {
+import H5ComponentBase from './H5ComponentBase'
+export default function H5ComponentBar( name, cfg ) {
   var component = new H5ComponentBase(name,cfg);
 
   $.each(cfg.data,function (index,item) {

@@ -1,6 +1,6 @@
 /* 基本图文组件对象 */
-
-var H5ComponentPolyLine =function ( name, cfg ) {
+import H5ComponentBase from './H5ComponentBase'
+export default function H5ComponentPolyLine( name, cfg ) {
   var component = new H5ComponentBase(name, cfg);
   //绘制网格线
   var w = cfg.width;

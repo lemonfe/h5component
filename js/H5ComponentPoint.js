@@ -1,6 +1,6 @@
 /* 散点图表组件对象 */
-
-var H5ComponentPoint =function ( name, cfg ) {
+import H5ComponentBase from './H5ComponentBase'
+export default function H5ComponentPoint( name, cfg ) {
   var component =  new H5ComponentBase( name ,cfg );
 
   var base = cfg.data[0][1];   //  以第一个数据的 比例为大小的 100%

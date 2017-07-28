@@ -1,5 +1,12 @@
 /* 内容管理对象 */
-var H5 = function () {
+import H5ComponentBase from './H5ComponentBase'
+import H5ComponentBar from './H5ComponentBar'
+import H5ComponentPoint from './H5ComponentPoint'
+import H5ComponentPie from './H5ComponentPie'
+import H5ComponentPolyLine from './H5ComponentPolyLine'
+import H5ComponentRadar from './H5ComponentRadar'
+import H5ComponentRing from './H5ComponentRing'
+export default function H5() {
 
   this.id = ('h5_'+Math.random()).replace('.','_');
   this.el = $('<div class="h5" id="'+this.id+'">').hide();
@@ -81,3 +88,5 @@ var H5 = function () {
     }
   }
 };
+
+

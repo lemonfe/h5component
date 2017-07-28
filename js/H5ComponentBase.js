@@ -1,6 +1,5 @@
 /* 基本图文组件对象 */
-
-var H5ComponentBase =function ( name, cfg ) {
+export default function H5ComponentBase( name, cfg ) {
   var cfg = cfg || {};
   var id = ( 'h5_c_'+Math.random() ).replace('.','_') ;
 

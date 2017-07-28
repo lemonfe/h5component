@@ -1,4 +1,6 @@
-var H5ComponentPie = function (name, cfg) {
+import H5ComponentBase from './H5ComponentBase'
+
+export default function H5ComponentPie(name, cfg) {
   var component = new H5ComponentBase(name, cfg);
   //绘制网格线
   var w = cfg.width;

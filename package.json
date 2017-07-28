@@ -1,0 +1,27 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemonfe/h5component.git"
+  },
+  "author": "lemonfe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lemonfe/h5component/issues"
+  },
+  "homepage": "https://github.com/lemonfe/h5component#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2",
+    "svg-url-loader": "^2.1.1",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  }
+}
