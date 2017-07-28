@@ -1,4 +1,3 @@
-import './index.css'
 import H5 from './js/H5'
 
 $(function () {
