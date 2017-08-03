@@ -5,7 +5,7 @@ import './preload.js'
 
 $(function() {
   var imgs = [
-    require('./assets/1.jpg'),
+    require('./assets/face_bg.jpg'),
     require('./assets/face_slogan.png'),
     require('./assets/face_logo.png'),
     require('./assets/face_img_left.png'),
@@ -24,8 +24,6 @@ $(function() {
   var len = imgs.length;
   $.preload(imgs, {
     each: function(count) {
-      console.log(count);
-      $('.progress').html(count);
     },
     all: function() {
       console.log('over');
@@ -36,7 +34,7 @@ $(function() {
 
   h5.whenAddPage = function() {
     this.addComponent('slide_up', {
-      bg: './assets/footer.png',
+      bg: imgs[5],
       css: {
         opacity: 0,
         left: 0,
@@ -59,7 +57,7 @@ $(function() {
   h5.addPage('face').addComponent('topic', {
     width: 395,
     height: 130,
-    bg: './assets/face_logo.png',
+    bg: imgs[2],
     css: {
       opacity: 0
     },
@@ -75,7 +73,7 @@ $(function() {
   }).addComponent('slogan', {
     width: 365,
     height: 99,
-    bg: './assets/face_slogan.png',
+    bg: imgs[1],
     css: {
       opacity: 0,
       top: 230
@@ -93,7 +91,7 @@ $(function() {
   }).addComponent('face_img_left', {
     width: 370,
     height: 493,
-    bg: './assets/face_img_left.png',
+    bg: imgs[3],
     css: {
       opacity: 0,
       left: -50,
@@ -113,7 +111,7 @@ $(function() {
   }).addComponent('face_img_right', {
     width: 370,
     height: 493,
-    bg: './assets/face_img_right.png',
+    bg: imgs[4],
     css: {
       opacity: 0,
       right: -50,
@@ -153,7 +151,7 @@ $(function() {
     height: 295,
     text: 'IT教育网-只学有用的IT教育网-只学有用的IT教育网-只学有用的IT教育网-只学有用的IT教育网-只学有用的',
     center: true,
-    bg: './assets/description_bg.gif',
+    bg: imgs[7],
     css: {
       opacity: 0,
       padding: '15px 10px 10px 10px',
@@ -175,7 +173,7 @@ $(function() {
     center: true,
     width: 515,
     height: 305,
-    bg: './assets/p1_people.png',
+    bg: imgs[6],
     css: {
       opacity: 0,
       bottom: 0
@@ -517,7 +515,7 @@ $(function() {
     center: true,
     width: 359,
     height: 129,
-    bg: './assets/tail_logo.png',
+    bg: imgs[11],
     css: {
       opacity: 0,
       top: 240
@@ -534,7 +532,7 @@ $(function() {
     center: true,
     width: 314,
     height: 46,
-    bg: './assets/tail_slogan.png',
+    bg: imgs[12],
     css: {
       opacity: 0,
       top: 320
@@ -551,7 +549,7 @@ $(function() {
   }).addComponent('share', {
     width: 128,
     height: 120,
-    bg: './assets/tail_share.png',
+    bg: imgs[13],
     css: {
       opacity: 0,
       top: 110
@@ -571,7 +569,7 @@ $(function() {
     center: true,
     width: 52,
     height: 50,
-    bg: './assets/tail_back.png',
+    bg: imgs[10],
     onclick: function() {
       $.fn.fullpage.moveTo(1)
     }
