@@ -271,7 +271,7 @@ function H5ComponentPie(name, cfg) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-throw new Error("Cannot find module \"./index.css\"");
+throw new Error("Cannot find module \"./index.scss\"");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(3);
 
 
@@ -289,7 +289,7 @@ $(function () {
 
   h5.whenAddPage = function () {
     this.addComponent('slide_up', {
-      bg: 'imgs/footer.png',
+      bg: 'assets/footer.png',
       css: {
         opacity: 0,
         left: 0,
@@ -314,7 +314,7 @@ $(function () {
       .addComponent('topic', {
         width: 395,
         height: 130,
-        bg: './imgs/face_logo.png',
+        bg: './assets/face_logo.png',
         css: {opacity: 0},
         animateIn: {top: 100, opacity: 1},
         animateOut: {top: 0, opacity: 0},
@@ -323,7 +323,7 @@ $(function () {
       .addComponent('slogan', {
         width: 365,
         height: 99,
-        bg: './imgs/face_slogan.png',
+        bg: './assets/face_slogan.png',
         css: {opacity: 0, top: 230},
         animateIn: {left: '50%', opacity: 1},
         animateOut: {left: 0, opacity: 0},
@@ -333,7 +333,7 @@ $(function () {
       .addComponent('face_img_left', {
         width: 370,
         height: 493,
-        bg: './imgs/face_img_left.png',
+        bg: './assets/face_img_left.png',
         css: {opacity: 0, left: -50, bottom: -50},
         animateIn: {left: 0, bottom: 0, opacity: 1},
         animateOut: {left: -50, bottom: -50, opacity: 0},
@@ -342,7 +342,7 @@ $(function () {
       .addComponent('face_img_right', {
         width: 370,
         height: 493,
-        bg: './imgs/face_img_right.png',
+        bg: './assets/face_img_right.png',
         css: {opacity: 0, right: -50, bottom: -50},
         animateIn: {right: 0, bottom: 0, opacity: 1},
         animateOut: {right: -50, bottom: -50, opacity: 0},
@@ -364,7 +364,7 @@ $(function () {
         height: 295,
         text: 'IT教育网-只学有用的IT教育网-只学有用的IT教育网-只学有用的IT教育网-只学有用的IT教育网-只学有用的',
         center: true,
-        bg: './imgs/description_bg.gif',
+        bg: './assets/description_bg.gif',
         css: {
           opacity: 0,
           padding: '15px 10px 10px 10px',
@@ -381,7 +381,7 @@ $(function () {
         center: true,
         width: 515,
         height: 305,
-        bg: './imgs/p1_people.png',
+        bg: './assets/p1_people.png',
         css: {
           opacity: 0,
           bottom: 0
@@ -724,7 +724,7 @@ $(function () {
         center: true,
         width: 359,
         height: 129,
-        bg: './imgs/tail_logo.png',
+        bg: './assets/tail_logo.png',
         css: {
           opacity: 0,
           top: 240
@@ -736,7 +736,7 @@ $(function () {
         center: true,
         width: 314,
         height: 46,
-        bg: './imgs/tail_slogan.png',
+        bg: './assets/tail_slogan.png',
         css: {
           opacity: 0,
           top: 320
@@ -748,7 +748,7 @@ $(function () {
       .addComponent('share', {
         width: 128,
         height: 120,
-        bg: './imgs/tail_share.png',
+        bg: './assets/tail_share.png',
         css: {
           opacity: 0,
           top: 110
@@ -761,7 +761,7 @@ $(function () {
         center: true,
         width: 52,
         height: 50,
-        bg: './imgs/tail_back.png',
+        bg: './assets/tail_back.png',
         onclick: function () {
           $.fn.fullpage.moveTo(1)
         }
