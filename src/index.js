@@ -20,17 +20,21 @@ $(function() {
     require('./assets/tail_slogan.png'),
     require('./assets/tail_share.png')
   ];
+  var h5 = new H5();
 
   var len = imgs.length;
   $.preload(imgs, {
     each: function(count) {
     },
     all: function() {
-      console.log('over');
-      $('.loading').hide()
+
+      $('.loading').hide();
+      h5.loader()
     }
   })
-  var h5 = new H5();
+
+
+
 
   h5.whenAddPage = function() {
     this.addComponent('slide_up', {
@@ -573,5 +577,5 @@ $(function() {
     onclick: function() {
       $.fn.fullpage.moveTo(1)
     }
-  }).loader();
+  });
 })
