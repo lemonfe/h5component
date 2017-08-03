@@ -26,7 +26,7 @@ export default function H5() {
 
     //text用于测试
     if( text != undefined) {
-      page.text(text)
+      page.innerHTML=text
     }
     this.el.append(page);
     this.page.push(page);
@@ -88,5 +88,3 @@ export default function H5() {
     }
   }
 };
-
-

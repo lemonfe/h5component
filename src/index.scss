@@ -4,12 +4,13 @@ body {
 }
 
 .h5_page {
-  background-image: url("assets/page_bg.jpg");
+  background-color: transparent!important;
   background-size: cover;
 }
 
 .h5_page_face {
-  background-image: url("assets/face_bg.jpg");
+  background-image: none;
+  background-color: transparent!important;
   background-size: cover;
 }
 
@@ -70,7 +71,7 @@ body {
 .h5_component_bar .name {
   width: 60px;
   float: left;
-  color: #000;
+  color: #99c0ff;
   text-align: center;
 }
 

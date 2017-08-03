@@ -11,7 +11,7 @@ export default function H5ComponentPoint( name, cfg ) {
     var point = $('<div class="point point_'+idx+'" >');
 
     var name = $('<div class="name">'+item[0]+'</div>');
-    var rate = $('<div class="per">'+ (item[1]*100)+'%</div>');
+    var rate = $('<div class="per">'+(item[1]-1)+'年</div>');
 
     name.append(rate);
     point.append(name);

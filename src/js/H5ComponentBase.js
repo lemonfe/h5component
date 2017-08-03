@@ -7,7 +7,7 @@ export default function H5ComponentBase( name, cfg ) {
   var cls = ' h5_component_'+cfg.type;
   var component = $('<div class="h5_component '+cls+' h5_component_name_'+name+'" id="'+id+'">');
 
-  cfg.text   &&  component.text(cfg.text);
+  cfg.text   &&  component.html(cfg.text);
   cfg.width  &&  component.width(cfg.width/2);
   cfg.height &&  component.height(cfg.height/2);
 
