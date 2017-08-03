@@ -3,21 +3,6 @@ body {
   padding: 0;
 }
 
-.loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(221, 226, 202, 1);
-  font-size: 30px;
-  text-align: center;
-}
-
-.progress {
-  margin-top: 300px;
-}
-
 .h5_page {
   background-image: url("assets/page_bg.jpg");
   background-size: cover;

@@ -4,6 +4,33 @@ import H5 from './js/H5'
 import './preload.js'
 
 $(function() {
+  var imgs = [
+    './src/assets/face_bg.jpg',
+    './assets/face_slogan.png',
+    './assets/face_logo.png',
+    './assets/face_img_left.png',
+    './assets/face_img_right.png',
+    './assets/footer.png',
+    './assets/p1_people.png',
+    './assets/page_bg.jpg',
+    './assets/page_caption_bg.png',
+    './assets/tail_back.png',
+    './assets/tail_logo.png',
+    './assets/tail_slogan.png'
+  ];
+
+  var len = imgs.length,
+
+    $progress = $('.progress');
+    console.log(len)
+  $.preload(imgs, {
+    each: function(count) {
+      $progress.html(Math.round((count + 1) / len * 100) + '%');
+    },
+    all: function() {
+      $('.loading').hide()
+    }
+  })
   var h5 = new H5();
 
   h5.whenAddPage = function() {
@@ -548,31 +575,4 @@ $(function() {
       $.fn.fullpage.moveTo(1)
     }
   }).loader();
-})
-$(function() {
-  var imgs = [
-    './src/assets/face_bg.jpg',
-    './assets/face_slogan.png',
-    './assets/face_logo.png',
-    './assets/face_img_left.png',
-    './assets/face_img_right.png',
-    './assets/footer.png',
-    './assets/p1_people.png',
-    './assets/page_bg.jpg',
-    './assets/page_caption_bg.png',
-    './assets/tail_back.png',
-    './assets/tail_logo.png',
-    './assets/tail_slogan.png'
-  ];
-
-  var len = imgs.length,
-    $progress = $('.progress');
-  $.preload(imgs, {
-    each: function(count) {
-      $progress.html(Math.round((count + 1) / len * 100) + '%');
-    },
-    all: function() {
-      $('.loading').hide()
-    }
-  })
 })
