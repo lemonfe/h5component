@@ -5,29 +5,30 @@ import './preload.js'
 
 $(function() {
   var imgs = [
-    './src/assets/face_bg.jpg',
-    './assets/face_slogan.png',
-    './assets/face_logo.png',
-    './assets/face_img_left.png',
-    './assets/face_img_right.png',
-    './assets/footer.png',
-    './assets/p1_people.png',
-    './assets/page_bg.jpg',
-    './assets/page_caption_bg.png',
-    './assets/tail_back.png',
-    './assets/tail_logo.png',
-    './assets/tail_slogan.png'
+    require('./assets/1.jpg'),
+    require('./assets/face_slogan.png'),
+    require('./assets/face_logo.png'),
+    require('./assets/face_img_left.png'),
+    require('./assets/face_img_right.png'),
+    require('./assets/footer.png'),
+    require('./assets/p1_people.png'),
+    require('./assets/description_bg.gif'),
+    require('./assets/page_bg.jpg'),
+    require('./assets/page_caption_bg.png'),
+    require('./assets/tail_back.png'),
+    require('./assets/tail_logo.png'),
+    require('./assets/tail_slogan.png'),
+    require('./assets/tail_share.png')
   ];
 
-  var len = imgs.length,
-
-    $progress = $('.progress');
-    console.log(len)
+  var len = imgs.length;
   $.preload(imgs, {
     each: function(count) {
-      $progress.html(Math.round((count + 1) / len * 100) + '%');
+      console.log(count);
+      $('.progress').html(count);
     },
     all: function() {
+      console.log('over');
       $('.loading').hide()
     }
   })
