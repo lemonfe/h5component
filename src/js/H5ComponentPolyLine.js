@@ -39,7 +39,7 @@ export default function H5ComponentPolyLine(name, cfg) {
       text.css({
         'width': text_w / 2,
         'left': (x / 2 - text_w / 4) + text_w / 2,
-        'color': 'rgb(149, 120, 172)'
+        'color': '#ff7676'
       });
       text.text(cfg.data[i][0]);
       component.append(text)
