@@ -11,14 +11,13 @@ $(function() {
         require('./assets/face_slogan.png'),
         require('./assets/page_caption_bg.png'),
         require('./assets/p1_people.png'),
-        require('./assets/tail_back.png'),
-        require('./assets/tail_logo.png')
+        require('./assets/tail_back.png')
+       
     ];
     var h5 = new H5();
 
     var len = imgs.length;
     $.preload(imgs, {
-        each: function(count) {},
         all: function() {
             $('.loading').hide();
             h5.loader(0);
@@ -166,7 +165,7 @@ $(function() {
         height: 400,
 
         css: {
-            bottom:150,
+            top:280,
             opacity: 0,
             fontSize: '30px'
         },
@@ -182,7 +181,7 @@ $(function() {
         text: '主要职责',
         css: {
             opacity: 0,
-            bottom: 70,
+            top: 500,
             width: '100%',
             color: 'rgb(240, 184, 18)',
             textAlign: 'center'
@@ -244,21 +243,6 @@ $(function() {
             top: 240,
             opacity: 0
         }
-    }).addComponent('msg', {
-        text: '技术和库',
-        css: {
-            opacity: 0,
-            bottom: 70,
-            width: '100%',
-            color: 'rgb(240, 184, 18)',
-            textAlign: 'center'
-        },
-        animateIn: {
-            opacity: 1
-        },
-        animateOut: {
-            opacity: 0
-        }
     }).addPage().addComponent('caption', {
         text: '个人技能分布'
     }).addComponent('radar', {
@@ -293,21 +277,6 @@ $(function() {
             top: 100
         },
         center: true
-    }).addComponent('msg', {
-        text: '以vue.js为主，目前正在向php方向发展',
-        css: {
-            opacity: 0,
-            bottom: 100,
-            width: '100%',
-            color: 'rgb(240, 184, 18)',
-            textAlign: 'center'
-        },
-        animateIn: {
-            opacity: 1
-        },
-        animateOut: {
-            opacity: 0
-        }
     }).addPage().addComponent('caption', {
         text: 'MVVM前端框架热度'
     }).addComponent('pie', {
@@ -340,21 +309,6 @@ $(function() {
             opacity: 0
         },
         center: true
-    }).addComponent('msg', {
-        text: 'React为2016年前端框架之王<p>Vue是新秀框架</p>',
-        css: {
-            opacity: 0,
-            bottom: 100,
-            width: '100%',
-            color: 'rgb(240, 184, 18)',
-            textAlign: 'center'
-        },
-        animateIn: {
-            opacity: 1
-        },
-        animateOut: {
-            opacity: 0
-        }
     }).addPage().addComponent('caption', {
         text: '个人日常爱好'
     }).addComponent('bar', {
@@ -391,21 +345,6 @@ $(function() {
             top: 100
         },
         center: true
-    }).addComponent('msg', {
-        text: '学无止境，努力努力再努力！！',
-        css: {
-            opacity: 0,
-            bottom: 140,
-            width: '100%',
-            color: '#99c0ff',
-            textAlign: 'center'
-        },
-        animateIn: {
-            opacity: 1
-        },
-        animateOut: {
-            opacity: 0
-        }
     }).addPage().addComponent('caption', {
         text: '职业规划'
     }).addComponent('point', {
@@ -427,12 +366,14 @@ $(function() {
         center: true
     }).addPage('tail').addComponent('logo', {
         center: true,
-        width: 359,
+        width: 500,
         height: 129,
-        bg: imgs[5],
+        text:"老铁，这是最后一页了！！！",
         css: {
             opacity: 0,
-            top: 240
+            top: 240,
+            color:'rgb(172, 43, 172)',
+            textAlign:'center'
         },
         animateIn: {
             top: 210,
